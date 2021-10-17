@@ -7,6 +7,11 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+if not os.path.exists('uploads'):
+    os.mkdir('uploads')
+if not os.path.exists('uploads/transformed/'):
+    os.mkdir('uploads/transformed/')
+
 
 def reader(name):
     img = cv2.imread(name)
