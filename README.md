@@ -22,7 +22,7 @@ the maximum k value i made in this app is 7
 
 after this the RESULTS WERE NOT GOOD....
 
-I had many boring looking photos
+I had many boring n bad look photos of mine
 
 which really look good AFTER
 
