@@ -6,6 +6,7 @@ IF USING PHONE ====
 
 use this arrow[>] to see edges of your image👍👍
 
+## ----
 This webapp can segment your image into multiple color [depending on your image] and 
 the K[cluters] value you select!!
 
