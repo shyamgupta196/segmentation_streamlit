@@ -35,7 +35,7 @@ hope you like the it😄😄
 
 ### 2.
 
-![not available](https://apps.streamlitusercontent.com/shyamgupta196/segmentation_streamlit/master/streamlit_app.py/+/media/2e83fc94d74b56352bbb81775a8f113dcc5e4fde21bb940882e927dc.jpeg)
+![not available](https://photos.google.com/photo/AF1QipOqU41lmzWRPXoc9EUqgPEhXrJeARw9pKndVaMa)
 
 
 
