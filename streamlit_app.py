@@ -1,9 +1,9 @@
 """
-author- shyam gupta & sol farhmanad
-Slow and inefficient [made this version better with caching ]
-with no transition-image example [made it in columns]
-Also no-edges[this will be added from the image segmentation model file]
-[and if possible we can stich the image to the segmented image to highlight things ] 
+AUTHOR -  @shyamgupta196 
+# CHECK README FILE TO KNOW MORE!!!! 
+#this executes faster with help of cacher
+transition-image example [made it in columns]done!
+edges available [this will be added from the image segmentation model file]done!
 """
 
 import streamlit as st
@@ -33,22 +33,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# with st.container() as cont1:
-#     cols = st.columns([2, 3, 4])
-#     with cols[0]:
-#         st.image("lady.png")
-#     with cols[1]:
-#         st.image("lady2.png")
-#     with cols[2]:
-#         st.image("lady4.png")
-# with cols[3]:
-#     st.image("lady6.png")
-
 st.image("collage.png")
-# st.markdown(
-#     "<h1 style='text-align: center; color: #aa00ff; '>Get colors of your image segmented</h1>",
-#     unsafe_allow_html=True,
-# )
 
 st.markdown(
     "<h1 style='text-align: center; color: #aa00ff;font-size:200%'>Select How many colors Do you want image to be Segmented into</h1>",
@@ -78,14 +63,14 @@ st.markdown(
 
 # adding the sidebar
 Edges = st.sidebar.checkbox("Do you want to see Edges")
-# Cartoonise = st.sidebar.checkbox("Do you want to Cartoonise This Image")
-
+## cannot 
 
 Enter = st.button("Segment Image")
 
 PATH = "uploads"
 
 # reading and saving the file
+# this is saved only on net cache, not on any system!!! 
 with open(os.path.join(PATH, uploadedfile.name), "wb") as f:
     f.write(uploadedfile.getbuffer())
 image = reader(f"{PATH}/{uploadedfile.name}")
@@ -110,6 +95,7 @@ if Enter:
         edge = SeeEdges()
         st.image(edge)
 
+    # this feature is still not developed may update later
     # if Cartoonise == True:
     #     edge = SeeEdges()
     #     st.image(cv2.addWeighted(image, 0.1, edge, 0.1, 3))
